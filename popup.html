@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>YouTube Timer</h1>
+  <form id="timerForm">
+    <label for="hours">Hours:</label>
+    <input type="number" id="hours" name="hours" min="0" value="0">
+    <br>
+    <label for="minutes">Minutes:</label>
+    <input type="number" id="minutes" name="minutes" min="0" value="0">
+    <br>
+    <button type="submit">Start Timer</button>
+  </form>
+  <div id="countdown" style="display: none;">
+    <h2>Time Remaining: <span id="timeRemaining"></span></h2>
+  </div>
+  <div id="timestamp"></div>
+</body>
+<script src="popup.js"></script>
+</html>
